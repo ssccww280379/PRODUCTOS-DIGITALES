@@ -170,9 +170,8 @@
 .cca .about { background: linear-gradient(135deg,#F7EDE4 0%,#F0E0D2 100%); }
 .cca .about-grid { display: grid; grid-template-columns: 1fr 1.5fr; gap: 60px; align-items: center; }
 .cca .about-img-wrap { position: relative; }
-.cca .about-photo { border-radius: var(--r-l); aspect-ratio: 3/4; background: linear-gradient(160deg,#DFC5B5 0%,#C4A090 60%,#A8806C 100%); display: flex; flex-direction: column; align-items: center; justify-content: center; gap: 10px; box-shadow: 0 24px 56px rgba(0,0,0,0.14); color: rgba(255,255,255,.75); text-align: center; padding: 28px; }
-.cca .about-photo-lbl { font-size: .78rem; font-weight: 700; letter-spacing: .08em; }
-.cca .about-photo-hint { font-size: .68rem; opacity: .65; line-height: 1.5; }
+.cca .about-photo { border-radius: var(--r-l); overflow: hidden; aspect-ratio: 3/4; box-shadow: 0 24px 56px rgba(0,0,0,0.14); }
+.cca .about-photo img { width: 100%; height: 100%; object-fit: cover; object-position: center top; display: block; }
 .cca .about-float { position: absolute; background: #fff; border-radius: var(--r); padding: 14px 18px; box-shadow: 0 8px 24px rgba(0,0,0,.12); bottom: -16px; right: -16px; text-align: center; }
 .cca .about-float .num { font-family: 'Cormorant Garamond', Georgia, serif; font-size: 2rem; font-weight: 700; color: var(--cp); display: block; line-height: 1; }
 .cca .about-float small { font-size: .72rem; color: var(--muted); font-weight: 600; }
@@ -241,7 +240,7 @@
       <div class="hero-content">
         <div class="hero-tag">Más de 1,200 familias ya duermen tranquilas</div>
         <h1>¿Tu hijo no puede dormir solo y las noches se han convertido en un <em>martirio</em>?</h1>
-        <p class="hero-sub">El <strong>Método Pequeño Durmiente</strong> te enseña, paso a paso, cómo acompañar a tu hijo de 1 a 5 años para que aprenda a dormirse solo y a través de la noche — con amor, sin gritos y sin abandonarlo.</p>
+        <p class="hero-sub">El <strong>Método Pequeño Durmiente</strong> te enseña, paso a paso, cómo acompañar a tu hijo de 1 a 2 años para que aprenda a dormirse solo y a través de la noche — con amor, sin gritos y sin abandonarlo.</p>
         <div class="hero-ctas">
           <a href="#cca-comprar" class="btn btn-p btn-lg">Quiero el ebook ahora</a>
           <a href="#cca-incluye" class="btn btn-s btn-lg">Ver contenido</a>
@@ -265,7 +264,7 @@
     <div class="wrap">
       <div class="tbar-item"><span class="num">1,200+</span><span>Familias atendidas</span></div>
       <div class="tbar-item"><span class="num">97%</span><span>Ven cambios en 7 días</span></div>
-      <div class="tbar-item"><span class="num">1–5</span><span>Años de edad</span></div>
+      <div class="tbar-item"><span class="num">1–2</span><span>Años de edad</span></div>
       <div class="tbar-item"><span class="num">100%</span><span>Crianza respetuosa</span></div>
     </div>
   </div>
@@ -307,7 +306,7 @@
       <div class="bridge-feats">
         <div class="bfeat"><div class="bfeat-check">✓</div>Sin Cry It Out</div>
         <div class="bfeat"><div class="bfeat-check">✓</div>Sin dejar al niño solo</div>
-        <div class="bfeat"><div class="bfeat-check">✓</div>Para niños de 1 a 5 años</div>
+        <div class="bfeat"><div class="bfeat-check">✓</div>Para niños de 1 a 2 años</div>
         <div class="bfeat"><div class="bfeat-check">✓</div>Resultados en 7 días</div>
       </div>
       <div style="margin-top:40px"><a href="#cca-comprar" class="btn btn-w btn-lg">Ver el método →</a></div>
@@ -331,10 +330,11 @@
             <h3>¿Qué vas a aprender?</h3>
             <ul>
               <li>Por qué tu hijo no puede dormir solo (y cómo resolverlo sin culpa)</li>
-              <li>El método de 3 fases adaptado para niños de 1 a 5 años</li>
+              <li>El método de 3 fases adaptado para niños de 1 a 2 años</li>
               <li>Cómo crear una rutina de sueño que realmente funcione</li>
               <li>Qué hacer cuando se despierta a medianoche</li>
-              <li>Estrategias según la edad: 1-2 años, 2-3 años, 3-5 años</li>
+              <li>Estrategias diferenciadas: 12-18 meses y 18-24 meses</li>
+              <li>Basado en la metodología Reggio Emilia: aprendizaje respetuoso y a tu propio ritmo</li>
               <li>Cómo manejar los miedos nocturnos y las pesadillas</li>
               <li>La transición de la cuna a la cama sin dramas</li>
               <li>Regresiones de sueño: qué son y cómo superarlas rápido</li>
@@ -374,7 +374,7 @@
       <div class="buy-card">
         <div class="buy-offer">Oferta de lanzamiento</div>
         <h2>Método Pequeño Durmiente</h2>
-        <p>El método de sueño respetuoso para niños de 1 a 5 años</p>
+        <p>El método de sueño respetuoso para niños de 1 a 2 años</p>
         <div class="buy-price">
           <span class="price-old">S/.65</span>
           <span class="price-now">S/.37</span>
@@ -491,10 +491,10 @@
         </div>
         <div class="testi-card">
           <div class="stars">★★★★★</div>
-          <blockquote>"Mi hija de 5 años llevaba toda su vida sin dormir sola. Ahora nos pide irse a dormir ella solita. Este método explica el POR QUÉ de cada paso — eso marca la diferencia."</blockquote>
+          <blockquote>"Mi hija de 2 años lloraba cada vez que la ponía en su cuna. Ahora se queda dormida sola. Lo mejor es que el método respeta su ritmo — nunca la dejé llorar sin respuesta."</blockquote>
           <div class="testi-author">
             <div class="testi-avatar av-4">M</div>
-            <div><div class="testi-name">Milagros V.</div><div class="testi-info">Mamá de Luciana, 5 años — Cusco</div></div>
+            <div><div class="testi-name">Milagros V.</div><div class="testi-info">Mamá de Luciana, 2 años — Cusco</div></div>
           </div>
         </div>
       </div>
@@ -507,9 +507,7 @@
       <div class="about-grid">
         <div class="about-img-wrap">
           <div class="about-photo">
-            <div style="font-size:3.5rem;opacity:.5">&#128100;</div>
-            <div class="about-photo-lbl">Tu foto aquí</div>
-            <div class="about-photo-hint">En Shopify → edita este bloque<br>y sube tu imagen personal</div>
+            <img src="https://images.unsplash.com/photo-1544005313-94ddf0286df2?w=600&q=85" alt="Autora del método">
           </div>
           <div class="about-float"><span class="num">+8</span><small>años acompañando familias</small></div>
         </div>
@@ -517,10 +515,11 @@
           <span class="eyebrow">Sobre mí</span>
           <h2>Hola, yo también fui esa mamá que lloraba a las 3am sin saber qué hacer.</h2>
           <p>Cuando nació mi primer hijo, tenía todos los conocimientos como psicóloga infantil... y aun así las noches eran un caos. Esa experiencia me llevó a especializar todo mi trabajo en el sueño infantil respetuoso.</p>
-          <p>Hoy llevo más de 8 años ayudando a familias y he destilado todo ese conocimiento en el Método Pequeño Durmiente. No vendo milagros — vendo un método que funciona cuando se aplica con consistencia y amor.</p>
+          <p>El Método Pequeño Durmiente está basado en la <strong>metodología Reggio Emilia</strong>, que pone al niño como protagonista de su propio aprendizaje y respeta sus tiempos y emociones. Hoy llevo más de 8 años ayudando a familias — no vendo milagros, vendo un método que funciona cuando se aplica con consistencia y amor.</p>
           <div class="creds">
             <div class="cred">Psicóloga Infantil — PUCP</div>
             <div class="cred">Especialista en sueño infantil respetuoso</div>
+            <div class="cred">Metodología Reggio Emilia aplicada al sueño</div>
             <div class="cred">Más de 1,200 familias acompañadas</div>
           </div>
         </div>
@@ -549,7 +548,7 @@
       <div class="faq-list">
         <div class="faq-item">
           <button class="faq-q">¿Para qué edades funciona el método?<span class="faq-icon">+</span></button>
-          <div class="faq-a"><p>El método está diseñado para niños de 1 a 5 años con secciones adaptadas para cada rango de edad: 1-2 años, 2-3 años y 3-5 años.</p></div>
+          <div class="faq-a"><p>El método está diseñado específicamente para niños de 1 a 2 años, con estrategias diferenciadas para 12-18 meses y 18-24 meses según el desarrollo de cada etapa.</p></div>
         </div>
         <div class="faq-item">
           <button class="faq-q">¿Implica dejar llorar al niño solo (Cry It Out)?<span class="faq-icon">+</span></button>
