@@ -97,21 +97,43 @@ document.addEventListener('DOMContentLoaded', () => {
     });
   });
 
-  /* --- Buy button feedback --- */
-  document.querySelectorAll('.product-cta').forEach(btn => {
-    btn.addEventListener('click', function () {
-      const original = this.textContent;
-      this.textContent = '¡Procesando...';
-      this.style.opacity = '0.8';
-      setTimeout(() => {
-        this.textContent = '✓ ¡Añadido!';
-        this.style.background = '#4A7C6B';
+  /* --- Checkout con Mercado Pago ---
+     Cada botón tiene data-product-id con el ID del producto.
+     1) Llama al backend para crear la preferencia
+     2) Redirige al checkout de Mercado Pago
+  --- */
+  document.querySelectorAll('.product-cta[data-product-id]').forEach(btn => {
+    btn.addEventListener('click', async function () {
+      const productId = this.dataset.productId;
+      const originalText = this.textContent;
+
+      this.textContent = 'Preparando pago...';
+      this.disabled = true;
+      this.style.opacity = '0.75';
+
+      try {
+        const res = await fetch('/api/crear-preferencia', {
+          method: 'POST',
+          headers: { 'Content-Type': 'application/json' },
+          body: JSON.stringify({ productId }),
+        });
+
+        if (!res.ok) throw new Error('Error del servidor');
+
+        const { initPoint } = await res.json();
+        window.location.href = initPoint;
+
+      } catch (err) {
+        console.error('Error al iniciar pago:', err);
+        this.textContent = '⚠ Error. Intenta de nuevo';
+        this.style.background = '#EF4444';
         setTimeout(() => {
-          this.textContent = original;
+          this.textContent = originalText;
+          this.disabled = false;
           this.style.opacity = '';
           this.style.background = '';
-        }, 1800);
-      }, 600);
+        }, 3000);
+      }
     });
   });
 
