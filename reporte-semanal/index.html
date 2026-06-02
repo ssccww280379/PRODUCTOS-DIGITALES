@@ -1,0 +1,648 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Reporte Semanal | Crianza con Amor</title>
+  <style>
+    /* --- Variables --- */
+    :root {
+      --bg: #0F1117;
+      --bg-card: #1A1D27;
+      --bg-elevated: #232738;
+      --border: rgba(255,255,255,0.07);
+      --text: #E2E8F0;
+      --text-muted: #94A3B8;
+      --primary: #F97316;
+      --primary-glow: rgba(249,115,22,0.15);
+      --green: #22C55E;
+      --green-glow: rgba(34,197,94,0.12);
+      --red: #EF4444;
+      --blue: #3B82F6;
+      --yellow: #EAB308;
+      --purple: #A855F7;
+      --radius: 12px;
+      --shadow: 0 4px 24px rgba(0,0,0,0.4);
+    }
+
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+    body { background: var(--bg); color: var(--text); font-family: 'Segoe UI', system-ui, sans-serif; font-size: 14px; line-height: 1.6; padding: 32px 24px; }
+    h1 { font-size: 28px; font-weight: 700; }
+    h2 { font-size: 18px; font-weight: 600; margin-bottom: 20px; color: var(--text); }
+    h3 { font-size: 14px; font-weight: 600; color: var(--text-muted); text-transform: uppercase; letter-spacing: 0.08em; margin-bottom: 12px; }
+    a { color: var(--primary); text-decoration: none; }
+
+    /* --- Layout --- */
+    .page { max-width: 1200px; margin: 0 auto; }
+    .grid-2 { display: grid; grid-template-columns: 1fr 1fr; gap: 20px; }
+    .grid-3 { display: grid; grid-template-columns: repeat(3, 1fr); gap: 16px; }
+    .grid-4 { display: grid; grid-template-columns: repeat(4, 1fr); gap: 16px; }
+    .mb-6 { margin-bottom: 24px; }
+    .mb-8 { margin-bottom: 32px; }
+
+    /* --- Header --- */
+    .report-header { display: flex; justify-content: space-between; align-items: flex-start; margin-bottom: 40px; padding-bottom: 24px; border-bottom: 1px solid var(--border); }
+    .header-left { display: flex; flex-direction: column; gap: 8px; }
+    .logo { font-size: 22px; font-weight: 700; color: var(--primary); }
+    .report-title { color: var(--text-muted); font-size: 13px; }
+    .header-meta { text-align: right; display: flex; flex-direction: column; gap: 6px; }
+    .header-meta [contenteditable] { text-align: right; color: var(--text-muted); font-size: 13px; }
+    .week-badge { display: inline-block; background: var(--primary-glow); color: var(--primary); border: 1px solid rgba(249,115,22,0.3); padding: 6px 14px; border-radius: 100px; font-size: 12px; font-weight: 700; }
+
+    /* --- Instruction Banner --- */
+    .instruction { background: rgba(59,130,246,0.08); border: 1px solid rgba(59,130,246,0.2); border-radius: var(--radius); padding: 14px 20px; margin-bottom: 32px; font-size: 12.5px; color: #93C5FD; line-height: 1.7; }
+    .instruction strong { color: #60A5FA; }
+
+    /* --- Section Block --- */
+    .section-block { background: var(--bg-card); border-radius: var(--radius); padding: 28px; margin-bottom: 20px; border: 1px solid var(--border); }
+    .section-title { font-size: 16px; font-weight: 600; margin-bottom: 20px; padding-bottom: 12px; border-bottom: 1px solid var(--border); display: flex; align-items: center; gap: 10px; }
+    .section-title .icon { font-size: 18px; }
+
+    /* --- KPI Cards --- */
+    .kpi-card { background: var(--bg-elevated); border-radius: var(--radius); padding: 20px; border: 1px solid var(--border); }
+    .kpi-label { font-size: 11px; font-weight: 700; letter-spacing: 0.1em; text-transform: uppercase; color: var(--text-muted); margin-bottom: 8px; }
+    .kpi-value { font-size: 32px; font-weight: 700; line-height: 1; margin-bottom: 6px; }
+    .kpi-value[contenteditable] { outline: none; border-bottom: 1px dashed rgba(255,255,255,0.1); }
+    .kpi-value[contenteditable]:focus { border-bottom-color: var(--primary); }
+    .kpi-delta { font-size: 12px; font-weight: 600; }
+    .kpi-delta.up { color: var(--green); }
+    .kpi-delta.down { color: var(--red); }
+    .kpi-card.primary { border-color: rgba(249,115,22,0.3); background: var(--primary-glow); }
+    .kpi-card.primary .kpi-value { color: var(--primary); }
+    .kpi-card.green { border-color: rgba(34,197,94,0.3); background: var(--green-glow); }
+    .kpi-card.green .kpi-value { color: var(--green); }
+
+    /* --- Progress Bar --- */
+    .progress-section { margin-bottom: 24px; }
+    .progress-label { display: flex; justify-content: space-between; font-size: 13px; margin-bottom: 8px; }
+    .progress-track { background: rgba(255,255,255,0.05); border-radius: 100px; height: 12px; overflow: hidden; }
+    .progress-fill { height: 100%; border-radius: 100px; background: linear-gradient(90deg, var(--primary), #FB923C); transition: width 0.8s ease; }
+
+    /* --- Bar Chart --- */
+    .bar-chart { display: flex; align-items: flex-end; gap: 8px; height: 140px; padding-top: 16px; }
+    .bar-col { display: flex; flex-direction: column; align-items: center; gap: 6px; flex: 1; }
+    .bar { width: 100%; border-radius: 6px 6px 0 0; background: linear-gradient(180deg, var(--primary) 0%, #C2410C 100%); min-height: 4px; transition: height 0.6s ease; cursor: pointer; position: relative; }
+    .bar:hover { opacity: 0.8; }
+    .bar-label { font-size: 10px; color: var(--text-muted); text-align: center; }
+    .bar-value { font-size: 11px; font-weight: 700; color: var(--text); text-align: center; }
+
+    /* --- Tables --- */
+    table { width: 100%; border-collapse: collapse; }
+    thead th { text-align: left; font-size: 11px; font-weight: 700; letter-spacing: 0.08em; text-transform: uppercase; color: var(--text-muted); padding: 10px 14px; border-bottom: 1px solid var(--border); }
+    tbody td { padding: 12px 14px; border-bottom: 1px solid rgba(255,255,255,0.04); font-size: 13px; vertical-align: middle; }
+    tbody tr:last-child td { border-bottom: none; }
+    tbody tr:hover td { background: rgba(255,255,255,0.02); }
+    td[contenteditable], th[contenteditable] { outline: none; }
+    td[contenteditable]:focus { background: rgba(249,115,22,0.06); }
+    .tag { display: inline-block; padding: 3px 10px; border-radius: 100px; font-size: 11px; font-weight: 700; }
+    .tag-green { background: var(--green-glow); color: var(--green); }
+    .tag-red { background: rgba(239,68,68,0.1); color: var(--red); }
+    .tag-yellow { background: rgba(234,179,8,0.1); color: var(--yellow); }
+    .tag-blue { background: rgba(59,130,246,0.1); color: var(--blue); }
+    .tag-purple { background: rgba(168,85,247,0.1); color: var(--purple); }
+
+    /* --- Funnel --- */
+    .funnel { display: flex; flex-direction: column; gap: 10px; align-items: center; }
+    .funnel-step { background: var(--bg-elevated); border-radius: 8px; padding: 14px 24px; text-align: center; border: 1px solid var(--border); transition: all 0.2s; }
+    .funnel-step:hover { border-color: var(--primary); }
+    .funnel-step-num { font-size: 22px; font-weight: 700; margin-bottom: 2px; }
+    .funnel-step-label { font-size: 12px; color: var(--text-muted); }
+    .funnel-arrow { color: var(--text-muted); font-size: 12px; }
+    .funnel-rate { font-size: 11px; color: var(--primary); font-weight: 700; }
+
+    /* --- Insight Cards --- */
+    .insight-card { background: var(--bg-elevated); border-radius: var(--radius); padding: 20px; border: 1px solid var(--border); }
+    .insight-card h3 { font-size: 12px; margin-bottom: 12px; }
+    .insight-card.good h3 { color: var(--green); }
+    .insight-card.bad h3 { color: var(--red); }
+    .insight-card.opp h3 { color: var(--yellow); }
+    .insight-list { display: flex; flex-direction: column; gap: 8px; }
+    .insight-item { display: flex; gap: 8px; font-size: 13px; line-height: 1.5; }
+    .insight-item::before { content: '→'; color: var(--text-muted); flex-shrink: 0; }
+    .insight-item[contenteditable] { outline: none; }
+    .insight-item[contenteditable]:focus { background: rgba(255,255,255,0.03); border-radius: 4px; }
+
+    /* --- Action Table --- */
+    .priority-alta { color: var(--red); font-weight: 700; }
+    .priority-media { color: var(--yellow); font-weight: 600; }
+    .priority-baja { color: var(--green); font-weight: 600; }
+    .status-todo { color: var(--text-muted); }
+    .status-doing { color: var(--blue); }
+    .status-done { color: var(--green); }
+
+    /* --- Projection Table --- */
+    .projection-table .current-row td { background: var(--primary-glow); color: var(--primary); font-weight: 700; }
+    .projection-table .target-row td { background: var(--green-glow); color: var(--green); font-weight: 700; }
+
+    /* --- Notes --- */
+    .notes-box { background: var(--bg-elevated); border-radius: var(--radius); padding: 20px; min-height: 120px; border: 1px dashed rgba(255,255,255,0.1); font-size: 13px; color: var(--text-muted); line-height: 1.8; outline: none; }
+    .notes-box:focus { border-color: var(--primary); color: var(--text); }
+
+    /* --- Responsive --- */
+    @media (max-width: 768px) {
+      body { padding: 20px 16px; }
+      .grid-2, .grid-3, .grid-4 { grid-template-columns: 1fr; }
+      .report-header { flex-direction: column; gap: 16px; }
+      .header-meta { text-align: left; }
+      .bar-chart { height: 100px; }
+    }
+  </style>
+</head>
+<body>
+<div class="page">
+
+  <!-- ==================== INSTRUCTION BANNER ==================== -->
+  <div class="instruction">
+    <strong>📋 Cómo usar este reporte:</strong> Haz clic en cualquier número o texto en <em>cursiva/subrayado</em> para editarlo directamente. Actualiza este archivo cada lunes con los datos de la semana anterior. Guarda una copia con el nombre: <strong>reporte-semana-XX-YYYY.html</strong> para llevar el historial. Los campos editables tienen un borde punteado al enfocarse.
+  </div>
+
+  <!-- ==================== HEADER ==================== -->
+  <div class="report-header">
+    <div class="header-left">
+      <div class="logo">Crianza con Amor</div>
+      <div class="report-title">Panel de Control — Reporte Semanal de Negocio</div>
+      <div class="week-badge">Semana <span contenteditable="true">01</span> · 2026</div>
+    </div>
+    <div class="header-meta">
+      <div contenteditable="true">📅 Período: 26 may – 01 jun 2026</div>
+      <div contenteditable="true">📊 Preparado por: Ana Lucía</div>
+      <div contenteditable="true">🎯 Meta mensual actual: S/10,000</div>
+    </div>
+  </div>
+
+  <!-- ==================== 1. RESUMEN EJECUTIVO ==================== -->
+  <div class="section-block mb-8">
+    <div class="section-title"><span class="icon">📊</span> Resumen Ejecutivo</div>
+    <div class="grid-4 mb-6">
+      <div class="kpi-card primary">
+        <div class="kpi-label">Ventas esta semana</div>
+        <div class="kpi-value" contenteditable="true">S/0</div>
+        <div class="kpi-delta up" contenteditable="true">↑ +0% vs semana anterior</div>
+      </div>
+      <div class="kpi-card">
+        <div class="kpi-label">Meta semanal (÷4)</div>
+        <div class="kpi-value" style="color:var(--yellow)">S/2,500</div>
+        <div class="kpi-delta" contenteditable="true" style="color:var(--text-muted)">Objetivo mensual: S/10,000</div>
+      </div>
+      <div class="kpi-card green">
+        <div class="kpi-label">Nuevos clientes</div>
+        <div class="kpi-value" contenteditable="true">0</div>
+        <div class="kpi-delta up" contenteditable="true">↑ +0% vs semana anterior</div>
+      </div>
+      <div class="kpi-card">
+        <div class="kpi-label">Ticket promedio</div>
+        <div class="kpi-value" style="color:var(--blue)" contenteditable="true">S/0</div>
+        <div class="kpi-delta" contenteditable="true" style="color:var(--text-muted)">Meta: S/120+</div>
+      </div>
+    </div>
+
+    <!-- Progress bar -->
+    <div class="progress-section">
+      <div class="progress-label">
+        <span>Progreso mensual acumulado</span>
+        <span><span contenteditable="true">S/0</span> / S/10,000 — <span contenteditable="true">0%</span></span>
+      </div>
+      <div class="progress-track">
+        <div class="progress-fill" id="mainProgress" style="width: 0%"></div>
+      </div>
+    </div>
+  </div>
+
+  <!-- ==================== 2. VENTAS POR PRODUCTO ==================== -->
+  <div class="section-block mb-8">
+    <div class="section-title"><span class="icon">📦</span> Ventas por Producto</div>
+    <div class="grid-2">
+      <!-- Tabla de ventas -->
+      <div>
+        <h3>Detalle de ventas</h3>
+        <table>
+          <thead>
+            <tr>
+              <th>Producto</th>
+              <th>Precio</th>
+              <th>Unidades</th>
+              <th>Total</th>
+              <th>vs sem. ant.</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>Noches Tranquilas</td>
+              <td>S/67</td>
+              <td contenteditable="true">0</td>
+              <td contenteditable="true">S/0</td>
+              <td><span class="tag tag-green" contenteditable="true">+0%</span></td>
+            </tr>
+            <tr>
+              <td>Come Sin Batalla</td>
+              <td>S/57</td>
+              <td contenteditable="true">0</td>
+              <td contenteditable="true">S/0</td>
+              <td><span class="tag tag-yellow" contenteditable="true">+0%</span></td>
+            </tr>
+            <tr>
+              <td>El Mundo Interior</td>
+              <td>S/57</td>
+              <td contenteditable="true">0</td>
+              <td contenteditable="true">S/0</td>
+              <td><span class="tag tag-yellow" contenteditable="true">+0%</span></td>
+            </tr>
+            <tr>
+              <td>Pack Completo</td>
+              <td>S/147</td>
+              <td contenteditable="true">0</td>
+              <td contenteditable="true">S/0</td>
+              <td><span class="tag tag-green" contenteditable="true">+0%</span></td>
+            </tr>
+            <tr style="background:rgba(255,255,255,0.03)">
+              <td><strong>TOTAL</strong></td>
+              <td></td>
+              <td contenteditable="true"><strong>0</strong></td>
+              <td contenteditable="true"><strong>S/0</strong></td>
+              <td><span class="tag tag-blue" contenteditable="true">+0%</span></td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+
+      <!-- Gráfico de barras semanal -->
+      <div>
+        <h3>Ventas por día esta semana</h3>
+        <div class="bar-chart">
+          <div class="bar-col">
+            <div class="bar-value" contenteditable="true">S/0</div>
+            <div class="bar" style="height:4px" contenteditable="false"></div>
+            <div class="bar-label">Lun</div>
+          </div>
+          <div class="bar-col">
+            <div class="bar-value" contenteditable="true">S/0</div>
+            <div class="bar" style="height:4px"></div>
+            <div class="bar-label">Mar</div>
+          </div>
+          <div class="bar-col">
+            <div class="bar-value" contenteditable="true">S/0</div>
+            <div class="bar" style="height:4px"></div>
+            <div class="bar-label">Mié</div>
+          </div>
+          <div class="bar-col">
+            <div class="bar-value" contenteditable="true">S/0</div>
+            <div class="bar" style="height:4px"></div>
+            <div class="bar-label">Jue</div>
+          </div>
+          <div class="bar-col">
+            <div class="bar-value" contenteditable="true">S/0</div>
+            <div class="bar" style="height:4px"></div>
+            <div class="bar-label">Vie</div>
+          </div>
+          <div class="bar-col">
+            <div class="bar-value" contenteditable="true">S/0</div>
+            <div class="bar" style="height:4px"></div>
+            <div class="bar-label">Sáb</div>
+          </div>
+          <div class="bar-col">
+            <div class="bar-value" contenteditable="true">S/0</div>
+            <div class="bar" style="height:4px"></div>
+            <div class="bar-label">Dom</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- ==================== 3. MARKETING ==================== -->
+  <div class="section-block mb-8">
+    <div class="section-title"><span class="icon">📣</span> Métricas de Marketing</div>
+
+    <h3 style="margin-bottom:12px">Fuentes de tráfico</h3>
+    <table class="mb-6" style="margin-bottom:24px">
+      <thead>
+        <tr>
+          <th>Fuente</th>
+          <th>Sesiones</th>
+          <th>Tasa conversión</th>
+          <th>Ventas generadas</th>
+          <th>Costo por venta</th>
+          <th>Estado</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>📸 Instagram Orgánico</td>
+          <td contenteditable="true">0</td>
+          <td contenteditable="true">0%</td>
+          <td contenteditable="true">S/0</td>
+          <td contenteditable="true">S/0</td>
+          <td><span class="tag tag-green">Activo</span></td>
+        </tr>
+        <tr>
+          <td>🎵 TikTok Orgánico</td>
+          <td contenteditable="true">0</td>
+          <td contenteditable="true">0%</td>
+          <td contenteditable="true">S/0</td>
+          <td contenteditable="true">S/0</td>
+          <td><span class="tag tag-green">Activo</span></td>
+        </tr>
+        <tr>
+          <td>📧 Email Marketing</td>
+          <td contenteditable="true">0</td>
+          <td contenteditable="true">0%</td>
+          <td contenteditable="true">S/0</td>
+          <td contenteditable="true">S/0</td>
+          <td><span class="tag tag-yellow">En proceso</span></td>
+        </tr>
+        <tr>
+          <td>📢 Meta Ads (Facebook/IG)</td>
+          <td contenteditable="true">0</td>
+          <td contenteditable="true">0%</td>
+          <td contenteditable="true">S/0</td>
+          <td contenteditable="true">S/0</td>
+          <td><span class="tag tag-yellow">En proceso</span></td>
+        </tr>
+        <tr>
+          <td>🔍 SEO / Google</td>
+          <td contenteditable="true">0</td>
+          <td contenteditable="true">0%</td>
+          <td contenteditable="true">S/0</td>
+          <td contenteditable="true">S/0</td>
+          <td><span class="tag tag-blue">Construyendo</span></td>
+        </tr>
+      </tbody>
+    </table>
+
+    <div class="grid-2">
+      <!-- Redes sociales -->
+      <div>
+        <h3>Redes sociales</h3>
+        <table>
+          <thead><tr><th>Red</th><th>Seguidores</th><th>Alcance</th><th>Engagement</th><th>Leads</th></tr></thead>
+          <tbody>
+            <tr><td>Instagram</td><td contenteditable="true">0</td><td contenteditable="true">0</td><td contenteditable="true">0%</td><td contenteditable="true">0</td></tr>
+            <tr><td>TikTok</td><td contenteditable="true">0</td><td contenteditable="true">0</td><td contenteditable="true">0%</td><td contenteditable="true">0</td></tr>
+            <tr><td>Facebook</td><td contenteditable="true">0</td><td contenteditable="true">0</td><td contenteditable="true">0%</td><td contenteditable="true">0</td></tr>
+          </tbody>
+        </table>
+      </div>
+      <!-- Email -->
+      <div>
+        <h3>Email marketing</h3>
+        <table>
+          <thead><tr><th>Métrica</th><th>Esta semana</th><th>Benchmark</th></tr></thead>
+          <tbody>
+            <tr><td>Lista total</td><td contenteditable="true">0</td><td style="color:var(--text-muted)">—</td></tr>
+            <tr><td>Nuevos suscriptores</td><td contenteditable="true">0</td><td style="color:var(--text-muted)">—</td></tr>
+            <tr><td>Tasa de apertura</td><td contenteditable="true">0%</td><td style="color:var(--green)">≥ 25%</td></tr>
+            <tr><td>Tasa de clic</td><td contenteditable="true">0%</td><td style="color:var(--green)">≥ 3%</td></tr>
+            <tr><td>Ventas atribuidas</td><td contenteditable="true">S/0</td><td style="color:var(--text-muted)">—</td></tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+  </div>
+
+  <!-- ==================== 4. FUNNEL ==================== -->
+  <div class="section-block mb-8">
+    <div class="section-title"><span class="icon">🔽</span> Análisis del Embudo de Ventas</div>
+    <div style="display:flex; gap:40px; align-items:flex-start; flex-wrap:wrap;">
+      <div style="min-width:260px;">
+        <div class="funnel">
+          <div class="funnel-step" style="width:100%">
+            <div class="funnel-step-num" contenteditable="true">0</div>
+            <div class="funnel-step-label">👀 Visitantes únicos</div>
+          </div>
+          <div class="funnel-arrow">↓ <span class="funnel-rate" contenteditable="true">0%</span> continúan</div>
+          <div class="funnel-step" style="width:75%">
+            <div class="funnel-step-num" contenteditable="true">0</div>
+            <div class="funnel-step-label">📧 Leads capturados</div>
+          </div>
+          <div class="funnel-arrow">↓ <span class="funnel-rate" contenteditable="true">0%</span> compran</div>
+          <div class="funnel-step" style="width:50%">
+            <div class="funnel-step-num" contenteditable="true">0</div>
+            <div class="funnel-step-label">🛒 Llegaron al checkout</div>
+          </div>
+          <div class="funnel-arrow">↓ <span class="funnel-rate" contenteditable="true">0%</span> completan</div>
+          <div class="funnel-step" style="width:30%; background:var(--primary-glow); border-color:rgba(249,115,22,0.3)">
+            <div class="funnel-step-num" style="color:var(--primary)" contenteditable="true">0</div>
+            <div class="funnel-step-label">✅ Ventas completadas</div>
+          </div>
+        </div>
+      </div>
+      <div style="flex:1; min-width:280px;">
+        <h3>Análisis de abandono</h3>
+        <table>
+          <thead><tr><th>Etapa de abandono</th><th>% abandono</th><th>Causa probable</th><th>Acción</th></tr></thead>
+          <tbody>
+            <tr>
+              <td>Landing → Scroll</td>
+              <td contenteditable="true">0%</td>
+              <td contenteditable="true">Hero débil</td>
+              <td contenteditable="true">Mejorar headline</td>
+            </tr>
+            <tr>
+              <td>Ver producto → Checkout</td>
+              <td contenteditable="true">0%</td>
+              <td contenteditable="true">Precio</td>
+              <td contenteditable="true">Testimonios cerca del precio</td>
+            </tr>
+            <tr>
+              <td>Checkout → Pago</td>
+              <td contenteditable="true">0%</td>
+              <td contenteditable="true">Fricción de pago</td>
+              <td contenteditable="true">Simplificar checkout</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+  </div>
+
+  <!-- ==================== 5. INSIGHTS ==================== -->
+  <div class="section-block mb-8">
+    <div class="section-title"><span class="icon">💡</span> Insights de la Semana</div>
+    <div class="grid-3">
+      <div class="insight-card good">
+        <h3>✅ Lo que funcionó</h3>
+        <div class="insight-list">
+          <div class="insight-item" contenteditable="true">Completar aquí lo que generó resultados positivos</div>
+          <div class="insight-item" contenteditable="true">Agregar otro insight positivo</div>
+          <div class="insight-item" contenteditable="true">Tercer elemento positivo</div>
+        </div>
+      </div>
+      <div class="insight-card bad">
+        <h3>❌ Lo que no funcionó</h3>
+        <div class="insight-list">
+          <div class="insight-item" contenteditable="true">Completar aquí lo que no dio resultados</div>
+          <div class="insight-item" contenteditable="true">Error o problema detectado</div>
+          <div class="insight-item" contenteditable="true">Qué se debe dejar de hacer</div>
+        </div>
+      </div>
+      <div class="insight-card opp">
+        <h3>🎯 Oportunidades detectadas</h3>
+        <div class="insight-list">
+          <div class="insight-item" contenteditable="true">Oportunidad de crecimiento identificada</div>
+          <div class="insight-item" contenteditable="true">Canal o audiencia sin explotar</div>
+          <div class="insight-item" contenteditable="true">Feedback de clientes a capitalizar</div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- ==================== 6. PLAN DE ACCIÓN ==================== -->
+  <div class="section-block mb-8">
+    <div class="section-title"><span class="icon">✅</span> Plan de Acción — Próxima Semana</div>
+    <table>
+      <thead>
+        <tr>
+          <th>#</th>
+          <th>Acción a ejecutar</th>
+          <th>Responsable</th>
+          <th>Fecha límite</th>
+          <th>Prioridad</th>
+          <th>Estado</th>
+          <th>Canal/Área</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>1</td>
+          <td contenteditable="true">Publicar 5 Reels de IG sobre sueño infantil</td>
+          <td contenteditable="true">Ana Lucía</td>
+          <td contenteditable="true">Vie 07 jun</td>
+          <td><span class="priority-alta">ALTA</span></td>
+          <td><span class="status-todo" contenteditable="true">⬜ Pendiente</span></td>
+          <td><span class="tag tag-purple">Instagram</span></td>
+        </tr>
+        <tr>
+          <td>2</td>
+          <td contenteditable="true">Configurar secuencia de 5 emails de bienvenida</td>
+          <td contenteditable="true">Ana Lucía</td>
+          <td contenteditable="true">Lun 03 jun</td>
+          <td><span class="priority-alta">ALTA</span></td>
+          <td><span class="status-todo" contenteditable="true">⬜ Pendiente</span></td>
+          <td><span class="tag tag-blue">Email</span></td>
+        </tr>
+        <tr>
+          <td>3</td>
+          <td contenteditable="true">Lanzar lead magnet: "5 frases que calman berrinches"</td>
+          <td contenteditable="true">Ana Lucía</td>
+          <td contenteditable="true">Mié 04 jun</td>
+          <td><span class="priority-alta">ALTA</span></td>
+          <td><span class="status-todo" contenteditable="true">⬜ Pendiente</span></td>
+          <td><span class="tag tag-green">Captación</span></td>
+        </tr>
+        <tr>
+          <td>4</td>
+          <td contenteditable="true">Crear 3 videos TikTok sobre alimentación</td>
+          <td contenteditable="true">Ana Lucía</td>
+          <td contenteditable="true">Jue 05 jun</td>
+          <td><span class="priority-media">MEDIA</span></td>
+          <td><span class="status-todo" contenteditable="true">⬜ Pendiente</span></td>
+          <td><span class="tag tag-purple">TikTok</span></td>
+        </tr>
+        <tr>
+          <td>5</td>
+          <td contenteditable="true">Responder comentarios y DMs acumulados</td>
+          <td contenteditable="true">Ana Lucía</td>
+          <td contenteditable="true">Diario</td>
+          <td><span class="priority-media">MEDIA</span></td>
+          <td><span class="status-todo" contenteditable="true">⬜ Pendiente</span></td>
+          <td><span class="tag tag-yellow">Comunidad</span></td>
+        </tr>
+        <tr>
+          <td>6</td>
+          <td contenteditable="true">Revisar métricas del sitio web (Google Analytics)</td>
+          <td contenteditable="true">Ana Lucía</td>
+          <td contenteditable="true">Lun 03 jun</td>
+          <td><span class="priority-baja">BAJA</span></td>
+          <td><span class="status-todo" contenteditable="true">⬜ Pendiente</span></td>
+          <td><span class="tag tag-blue">Analytics</span></td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+
+  <!-- ==================== 7. PROYECCIÓN DE CRECIMIENTO ==================== -->
+  <div class="section-block mb-8">
+    <div class="section-title"><span class="icon">📈</span> Proyección de Crecimiento (+35% mensual)</div>
+    <table class="projection-table">
+      <thead>
+        <tr>
+          <th>Mes</th>
+          <th>Meta mensual</th>
+          <th>Ventas reales</th>
+          <th>Cumplimiento</th>
+          <th>Unidades necesarias</th>
+          <th>Clientes nuevos/sem.</th>
+          <th>Estado</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr class="current-row">
+          <td>Junio 2026 (Mes 1)</td>
+          <td>S/10,000</td>
+          <td contenteditable="true">S/0</td>
+          <td contenteditable="true">0%</td>
+          <td>~68 unidades</td>
+          <td>~17/sem.</td>
+          <td><span class="tag tag-yellow">En curso</span></td>
+        </tr>
+        <tr>
+          <td>Julio 2026 (Mes 2)</td>
+          <td>S/13,500</td>
+          <td contenteditable="true">S/—</td>
+          <td contenteditable="true">—</td>
+          <td>~92 unidades</td>
+          <td>~23/sem.</td>
+          <td><span class="tag" style="background:rgba(255,255,255,0.05);color:var(--text-muted)">Proyectado</span></td>
+        </tr>
+        <tr>
+          <td>Agosto 2026 (Mes 3)</td>
+          <td>S/18,225</td>
+          <td contenteditable="true">S/—</td>
+          <td contenteditable="true">—</td>
+          <td>~124 unidades</td>
+          <td>~31/sem.</td>
+          <td><span class="tag" style="background:rgba(255,255,255,0.05);color:var(--text-muted)">Proyectado</span></td>
+        </tr>
+        <tr>
+          <td>Septiembre 2026 (Mes 4)</td>
+          <td>S/24,604</td>
+          <td contenteditable="true">S/—</td>
+          <td contenteditable="true">—</td>
+          <td>~167 unidades</td>
+          <td>~42/sem.</td>
+          <td><span class="tag" style="background:rgba(255,255,255,0.05);color:var(--text-muted)">Proyectado</span></td>
+        </tr>
+        <tr>
+          <td>Octubre 2026 (Mes 5)</td>
+          <td>S/33,215</td>
+          <td contenteditable="true">S/—</td>
+          <td contenteditable="true">—</td>
+          <td>~226 unidades</td>
+          <td>~57/sem.</td>
+          <td><span class="tag" style="background:rgba(255,255,255,0.05);color:var(--text-muted)">Proyectado</span></td>
+        </tr>
+        <tr class="target-row">
+          <td>Noviembre 2026 (Mes 6)</td>
+          <td>S/44,840</td>
+          <td contenteditable="true">S/—</td>
+          <td contenteditable="true">—</td>
+          <td>~305 unidades</td>
+          <td>~76/sem.</td>
+          <td><span class="tag tag-green">🎯 META +35%×6</span></td>
+        </tr>
+      </tbody>
+    </table>
+    <p style="font-size:11px; color:var(--text-muted); margin-top:12px;">* Proyección basada en crecimiento mensual del 35%. Unidades calculadas sobre ticket promedio de S/147 (pack). Ajustar según mix real de productos.</p>
+  </div>
+
+  <!-- ==================== 8. NOTAS Y COMENTARIOS ==================== -->
+  <div class="section-block">
+    <div class="section-title"><span class="icon">📝</span> Notas y Observaciones de la Semana</div>
+    <div class="notes-box" contenteditable="true">
+      Escribe aquí tus observaciones, reflexiones, ideas o cualquier nota importante de la semana. Por ejemplo: feedback de clientes recibido, ideas de contenido, problemas técnicos, conversaciones importantes, etc.
+    </div>
+  </div>
+
+</div>
+</body>
+</html>
