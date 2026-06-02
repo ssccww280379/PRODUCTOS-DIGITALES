@@ -15,37 +15,13 @@ const mpClient = new MercadoPagoConfig({
 
 // ---- Catálogo de productos ----
 const PRODUCTOS = {
-  'noches-tranquilas': {
-    id: 'noches-tranquilas',
-    title: 'Noches Tranquilas: El método del sueño respetuoso',
-    description: 'Guía práctica para enseñarle a tu hijo (1-5 años) a dormir solo con respeto y amor.',
+  'metodo-pequeno-durmiente': {
+    id: 'metodo-pequeno-durmiente',
+    title: 'Método Pequeño Durmiente',
+    description: 'El método de sueño respetuoso para enseñarle a tu hijo (1-5 años) a dormir solo y toda la noche.',
     unit_price: 67,
-    downloads: ['DOWNLOAD_URL_SUENO'],
-    emailSubject: '¡Tu ebook Noches Tranquilas ya está listo! 🌙',
-  },
-  'come-sin-batalla': {
-    id: 'come-sin-batalla',
-    title: 'Come Sin Batalla: Alimentación sin conflictos',
-    description: 'Transforma la relación de tu hijo con la comida sin presiones ni chantajes.',
-    unit_price: 57,
-    downloads: ['DOWNLOAD_URL_ALIMENTACION'],
-    emailSubject: '¡Tu ebook Come Sin Batalla ya está listo! 🥗',
-  },
-  'el-mundo-interior': {
-    id: 'el-mundo-interior',
-    title: 'El Mundo Interior: Guía de emociones y berrinches',
-    description: 'Aprende a acompañar a tu hijo cuando sus emociones lo desbordan.',
-    unit_price: 57,
-    downloads: ['DOWNLOAD_URL_EMOCIONES'],
-    emailSubject: '¡Tu ebook El Mundo Interior ya está listo! 💛',
-  },
-  'pack-completo': {
-    id: 'pack-completo',
-    title: 'Pack Crianza Respetuosa COMPLETO (3 ebooks + bonus)',
-    description: 'Todos los ebooks más recursos exclusivos de crianza respetuosa.',
-    unit_price: 147,
-    downloads: ['DOWNLOAD_URL_SUENO', 'DOWNLOAD_URL_ALIMENTACION', 'DOWNLOAD_URL_EMOCIONES', 'DOWNLOAD_URL_BONUS_LIMITES'],
-    emailSubject: '¡Tu Pack Crianza Respetuosa está listo! 🎁',
+    downloads: ['DOWNLOAD_URL_EBOOK'],
+    emailSubject: '¡Tu ebook Método Pequeño Durmiente ya está listo! 🌙',
   },
 };
 
