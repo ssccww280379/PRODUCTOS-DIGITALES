@@ -93,7 +93,7 @@ app.post('/api/crear-preferencia', async (req, res) => {
         auto_return: 'approved',
         notification_url: `${process.env.BASE_URL}/api/webhook`,
         statement_descriptor: 'Crianza con Amor',
-        metadata: { productId },
+        metadata: { product_id: productId },
       },
     });
 

@@ -250,7 +250,7 @@ footer { background: #1A1A1A; color: rgba(255,255,255,0.7); padding: 60px 0 32px
 .footer-col ul { display: flex; flex-direction: column; gap: 10px; }
 .footer-col ul li a { font-size: 0.9rem; transition: color 0.2s; }
 .footer-col ul li a:hover { color: var(--primary-light); }
-.footer-bottom { border-top: 1px solid rgba(255,255,255,0.08); padding-top: 28px; display: flex; align-items: center; justify-content: space-between; flex-wrap: gap; font-size: 0.85rem; }
+.footer-bottom { border-top: 1px solid rgba(255,255,255,0.08); padding-top: 28px; display: flex; align-items: center; justify-content: space-between; flex-wrap: wrap; font-size: 0.85rem; }
 
 /* =============================================
    ANIMATIONS
