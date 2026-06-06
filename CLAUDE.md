@@ -1,61 +1,61 @@
 # CLAUDE.md
 
-This file provides guidance to Claude Code (claude.ai/code) when working with code in this repository.
+Este archivo le proporciona orientación a Claude Code (claude.ai/code) cuando trabaja con código en este repositorio.
 
-## Project Overview
+## Descripción del proyecto
 
-This repository is the workspace for **Duerme toda la noche** (`duermetodalanoche.com`), a Shopify store based in Peru that sells digital sleep-training products for parents. There is no application source code — this repo serves as the operational base for managing the store and its marketing through connected MCP tools.
+Este repositorio es el espacio de trabajo de **Duerme toda la noche** (`duermetodalanoche.com`), una tienda Shopify con sede en Perú que vende productos digitales de entrenamiento de sueño para padres. No hay código fuente de aplicación — este repositorio sirve como base operativa para gestionar la tienda y su marketing a través de las herramientas MCP conectadas.
 
-**Store context:**
-- **Currency:** PEN (Peruvian Sol, S/.)
-- **Timezone:** UTC-5 (Lima, Peru)
-- **Language:** Spanish (all product copy, descriptions, and customer-facing content should be in Spanish)
+**Contexto de la tienda:**
+- **Moneda:** PEN (Sol peruano, S/.)
+- **Zona horaria:** UTC-5 (Lima, Perú)
+- **Idioma:** Español (todo el contenido de productos, descripciones y texto dirigido al cliente debe estar en español)
 - **Plan:** Shopify
-- **Current catalog:** 1 digital product — *Método pequeño durmiente* (sleep-training guide, S/. 37.00)
+- **Catálogo actual:** 1 producto digital — *Método pequeño durmiente* (guía de entrenamiento de sueño, S/. 37.00)
 
-## Connected MCP Tools
+## Herramientas MCP conectadas
 
-Two MCP servers are available in every session.
+Dos servidores MCP están disponibles en cada sesión.
 
 ### Shopify (`mcp__f671a2e6-...`)
 
-Manages the store directly via the Shopify Admin API.
+Gestiona la tienda directamente a través de la API de administración de Shopify.
 
-| Capability | Primary tool(s) |
+| Capacidad | Herramienta(s) principal(es) |
 |---|---|
-| Store details | `get-shop-info` |
-| Products — read | `search_products`, `get-product` |
-| Products — write | `create-product`, `update-product`, `bulk-update-product-status` |
-| Collections | `search_collections`, `get-collection`, `create-collection`, `update-collection`, `add-to-collection` |
-| Orders | `list-orders`, `get-order` |
-| Customers | `list-customers` |
-| Inventory | `get-inventory-levels`, `set-inventory` |
-| Analytics | `run-analytics-query` (ShopifyQL) |
-| Discounts | `create-discount` |
-| Anything else | `graphql_query` / `graphql_mutation` (use for metafields, pages, blogs, gift cards, markets, etc.) |
+| Detalles de la tienda | `get-shop-info` |
+| Productos — lectura | `search_products`, `get-product` |
+| Productos — escritura | `create-product`, `update-product`, `bulk-update-product-status` |
+| Colecciones | `search_collections`, `get-collection`, `create-collection`, `update-collection`, `add-to-collection` |
+| Pedidos | `list-orders`, `get-order` |
+| Clientes | `list-customers` |
+| Inventario | `get-inventory-levels`, `set-inventory` |
+| Analítica | `run-analytics-query` (ShopifyQL) |
+| Descuentos | `create-discount` |
+| Todo lo demás | `graphql_query` / `graphql_mutation` (usar para metafields, páginas, blogs, tarjetas de regalo, mercados, etc.) |
 
-**GraphQL decision rule:** prefer a dedicated tool when one exists; fall back to `graphql_query` or `graphql_mutation` for everything else. Never tell the user something is unavailable just because there is no dedicated tool.
+**Regla de decisión GraphQL:** preferir una herramienta dedicada cuando exista; recurrir a `graphql_query` o `graphql_mutation` para todo lo demás. Nunca decirle al usuario que algo no está disponible solo porque no existe una herramienta dedicada.
 
-Before writing any GraphQL, call `graphql_schema` to inspect available types and `validate_graphql_codeblocks` to check syntax before mutating.
+Antes de escribir cualquier GraphQL, llamar a `graphql_schema` para inspeccionar los tipos disponibles y a `validate_graphql_codeblocks` para verificar la sintaxis antes de mutar.
 
 ### Supermetrics (`mcp__f5727907-...`)
 
-Pulls marketing and analytics data from 150+ sources (Google Ads, Meta Ads, Google Analytics, TikTok Ads, etc.).
+Extrae datos de marketing y analítica de más de 150 fuentes (Google Ads, Meta Ads, Google Analytics, TikTok Ads, etc.).
 
-**Workflow (always follow this order):**
-1. `data_source_discovery()` — list sources and check auth status.
-2. `data_source_discovery(ds_id=X)` — get config: accounts, fields, report types, required settings.
-3. `accounts_discovery(ds_id=X)` if `has_account_list` is true.
-4. `field_discovery(ds_id=X)` if `has_fields` is true.
-5. `data_query(...)` — pass `report_type` and all settings inside the `settings` object.
-6. `get_async_query_results(schedule_id=...)` — poll until ready.
+**Flujo de trabajo (seguir siempre este orden):**
+1. `data_source_discovery()` — listar fuentes y verificar estado de autenticación.
+2. `data_source_discovery(ds_id=X)` — obtener configuración: cuentas, campos, tipos de reporte, ajustes requeridos.
+3. `accounts_discovery(ds_id=X)` si `has_account_list` es verdadero.
+4. `field_discovery(ds_id=X)` si `has_fields` es verdadero.
+5. `data_query(...)` — pasar `report_type` y todos los ajustes dentro del objeto `settings`.
+6. `get_async_query_results(schedule_id=...)` — consultar hasta que esté listo.
 
-**Rules:** Never fabricate data. Only use field IDs returned by `field_discovery` — never display names. If a source needs auth, share the login link from `data_source_discovery`.
+**Reglas:** Nunca fabricar datos. Usar solo los IDs de campo devueltos por `field_discovery` — nunca los nombres de visualización. Si una fuente requiere autenticación, compartir el enlace de inicio de sesión obtenido de `data_source_discovery`.
 
-## Key Conventions
+## Convenciones clave
 
-- All prices are in **PEN**. When creating or updating products, always set `currencyCode: "PEN"`.
-- All customer-facing text (titles, descriptions, SEO fields) must be written in **Spanish**.
-- The store sells digital/downloadable products — physical inventory tracking is not applicable.
-- When running ShopifyQL analytics, default date ranges to the last 30 days unless specified otherwise.
-- Product GIDs follow the pattern `gid://shopify/Product/<numeric_id>`; variant GIDs follow `gid://shopify/ProductVariant/<numeric_id>`.
+- Todos los precios están en **PEN**. Al crear o actualizar productos, siempre establecer `currencyCode: "PEN"`.
+- Todo el texto dirigido al cliente (títulos, descripciones, campos SEO) debe estar escrito en **español**.
+- La tienda vende productos digitales/descargables — el seguimiento de inventario físico no aplica.
+- Al ejecutar analítica con ShopifyQL, el rango de fechas predeterminado son los últimos 30 días, salvo que se indique lo contrario.
+- Los GIDs de productos siguen el patrón `gid://shopify/Product/<id_numérico>`; los GIDs de variantes siguen `gid://shopify/ProductVariant/<id_numérico>`.
