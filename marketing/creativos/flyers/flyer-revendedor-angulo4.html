@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<title>Flyer Revendedor — Ángulo 4</title>
+<style>
+  * { margin:0; padding:0; box-sizing:border-box; }
+  body { width:1080px; height:1350px; font-family:'Arial Black', Arial, sans-serif;
+         background: linear-gradient(160deg, #101418 0%, #1c2b33 60%, #0e1a20 100%);
+         color:#fff; overflow:hidden; position:relative; }
+  .franja { position:absolute; top:0; left:0; right:0; height:16px;
+            background:linear-gradient(90deg,#ffb020,#ff7a20); }
+  .contenido { position:relative; z-index:2; padding:90px 80px; height:100%;
+               display:flex; flex-direction:column; }
+  .etiqueta { display:inline-block; background:#ffb020; color:#151515; font-size:30px;
+              letter-spacing:4px; padding:14px 28px; border-radius:8px; width:max-content; }
+  h1 { font-size:96px; line-height:1.06; margin-top:48px; text-transform:uppercase; }
+  h1 .amarillo { color:#ffb020; }
+  .sub { margin-top:40px; font-size:40px; font-family:Arial, sans-serif; font-weight:bold;
+         color:#e8eef2; line-height:1.4; max-width:900px; }
+  .beneficios { margin-top:auto; display:grid; grid-template-columns:1fr 1fr; gap:24px; }
+  .b { background:#ffffff10; border:2px solid #ffb02055; border-radius:18px; padding:30px;
+       font-size:32px; font-family:Arial, sans-serif; font-weight:bold; line-height:1.3; }
+  .b span { color:#ffb020; display:block; font-size:40px; margin-bottom:8px; }
+  .pie { margin-top:50px; display:flex; align-items:center; justify-content:space-between; }
+  .logo { width:230px; height:110px; border:3px dashed #ffffff66; border-radius:14px;
+          display:flex; align-items:center; justify-content:center; font-size:30px; color:#ffffff99; }
+  .cta { background:#25d366; color:#08240f; font-size:40px; padding:30px 50px; border-radius:16px;
+         text-transform:uppercase; box-shadow:0 10px 30px #25d36644; }
+</style>
+</head>
+<body>
+  <div class="franja"></div>
+  <div class="contenido">
+    <span class="etiqueta">PARA TIENDAS Y REVENDEDORES</span>
+    <h1>Un cliente que <span class="amarillo">reclama</span><br>es un cliente que<br><span class="amarillo">no vuelve</span></h1>
+    <p class="sub">Deja de arriesgar tu reputación con trenzado genérico. Vende <span style="color:#ffb020">[MARCA]</span>: calidad consistente, margen protegido y clientes que regresan por más.</p>
+    <div class="beneficios">
+      <div class="b"><span>✔ Menos reclamos</span>Calidad consistente lote a lote</div>
+      <div class="b"><span>✔ Más margen</span>Precios especiales de revendedor</div>
+      <div class="b"><span>✔ Recompra</span>El cliente vuelve por la que aguanta</div>
+      <div class="b"><span>✔ Con respaldo</span>Marca con publicidad activa</div>
+    </div>
+    <div class="pie">
+      <div class="logo">[LOGO]</div>
+      <div class="cta">📲 Pide tu lista de precios</div>
+    </div>
+  </div>
+</body>
+</html>
