@@ -46,7 +46,8 @@
 ## Canales
 - **Venta B2C:** `[tienda / Marketplace / WhatsApp]`
 - **Venta B2B:** `[WhatsApp Business / catálogo / visita comercial]`
-- **Zona geográfica de las campañas:** Perú (precios en soles) — `[ciudades/regiones por confirmar]`
+- **Zona geográfica de las campañas:** Perú — **Iquitos, Nauta y Requena (Loreto)**. Contexto: economía fluvial — pesca, transporte de carga por río y mercados; los 3 usos de la driza son cotidianos aquí.
+- **Presupuesto diario confirmado:** **S/ 15.00** (CBO, una sola campaña B2B)
 - **Página de Facebook:** `[nombre/ID]` · **Instagram:** `[usuario/ID]` · **WhatsApp:** `[número]`
 
 ## Tono de marca
