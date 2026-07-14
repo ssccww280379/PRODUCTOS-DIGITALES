@@ -48,7 +48,7 @@
 - **Venta B2B:** `[WhatsApp Business / catálogo / visita comercial]`
 - **Zona geográfica de las campañas:** Perú — **Iquitos, Nauta y Requena (Loreto)**. Contexto: economía fluvial — pesca, transporte de carga por río y mercados; los 3 usos de la driza son cotidianos aquí.
 - **Presupuesto diario confirmado:** **S/ 15.00** (CBO, una sola campaña B2B)
-- **Página de Facebook:** `[nombre/ID]` · **Instagram:** `[usuario/ID]` · **WhatsApp:** `[número]`
+- **Página de Facebook:** `[nombre/ID]` · **Instagram:** `[usuario/ID]` · **WhatsApp:** +51 994 779 797 (⚠️ debe estar vinculado a la página de Facebook para anuncios con destino WhatsApp)
 
 ## Tono de marca
 Directo y de trabajo: hablamos con gente que se gana la vida con las manos (pescadores, ferreteros, distribuidores). Confiable y serio, como la etiqueta: calidad, confianza, progreso.
