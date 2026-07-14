@@ -12,13 +12,17 @@
 - **Tipo:** driza (cuerda/soga trenzada) 100% P.P. (polipropileno) ✅
 - **Color:** blanco ✅ (otros colores: `[completar si existen]`)
 - **Presentaciones:** rollos de **1 kg, 5 kg y 10 kg**
-- **Medidas (grosor):** 3/32", 1/2" `[completar otras medidas disponibles]`
+- **Medidas (grosor):** finas: 1/8", 5/32", 3/16" (también 3/32" según etiqueta) · gruesas: de 1/4" hasta 3/4"
 - **Claims comprobables (impresos en la etiqueta):**
   - ✅ Triple capa de seguridad
   - ✅ Protección UV
   - ✅ Alta resistencia
   - ✅ No se deshilacha
-- **Precio al público:** `[por presentación]` · **Precio revendedor:** `[precio]` · **Precio mayorista:** `[precio y mínimo de compra]`
+- **Precios (por kg, en soles peruanos):**
+  - Medidas de **1/4" a 3/4"**: **S/ 19.50 el kg**
+  - Medidas finas **1/8", 5/32" y 3/16"**: **S/ 21.00 el kg**
+  - `[Confirmar: ¿estos son precios a revendedor/mayorista o al público? ¿Hay descuento por volumen y mínimo de compra?]`
+- **Ejemplo de ticket:** rollo de 5 kg en 1/2" = S/ 97.50 · rollo de 10 kg = S/ 195.00
 
 ## Usos principales (confirmados por el dueño de la marca)
 1. **Amarres de mercadería:** asegurar carga, bultos y fardos (comercio, transporte, mercados).
@@ -28,9 +32,11 @@
 - Implicación publicitaria: en los tres usos la driza sostiene algo valioso (la carga, el bote, la red). El anuncio vende lo que se deja de perder, no la cuerda.
 
 ## Segmentos objetivo
-1. **Pescadores** (B2C): artesanales principalmente. La driza es herramienta de trabajo: si falla, se pierde la faena. Este segmento incluye también a quien amarra mercadería o embarcaciones (comerciantes, transportistas, gente de puerto): mismo dolor, misma driza.
-2. **Revendedores** (B2B): ferreterías, tiendas de pesca, bazares. Compran por margen y por evitar reclamos.
-3. **Mayoristas** (B2B): distribuidores regionales. Compran por rotación, margen por volumen y respaldo de marca.
+> 🎯 **CLIENTE OBJETIVO PRINCIPAL (confirmado por el dueño): MAYORISTAS y REVENDEDORES.** Las campañas y el presupuesto se priorizan en B2B (ángulos 4 y 5). El pescador/usuario final es audiencia secundaria: sirve para generar demanda que empuje al revendedor a pedir la marca.
+
+1. **Mayoristas** (B2B — prioridad 1): distribuidores regionales. Compran por rotación, margen por volumen y respaldo de marca.
+2. **Revendedores** (B2B — prioridad 1): ferreterías, tiendas de pesca, bazares. Compran por margen y por evitar reclamos.
+3. **Pescadores y usuarios finales** (B2C — secundario): pescadores artesanales, comerciantes, transportistas, gente de puerto. La driza es herramienta de trabajo: si falla, se pierde la faena/la carga.
 
 ## Propuesta de valor
 - Para el pescador/usuario: una driza que aguanta el sol, el mar y la carga — la faena no se pierde por la cuerda.
@@ -40,7 +46,7 @@
 ## Canales
 - **Venta B2C:** `[tienda / Marketplace / WhatsApp]`
 - **Venta B2B:** `[WhatsApp Business / catálogo / visita comercial]`
-- **Zona geográfica de las campañas:** `[país/ciudades]`
+- **Zona geográfica de las campañas:** Perú (precios en soles) — `[ciudades/regiones por confirmar]`
 - **Página de Facebook:** `[nombre/ID]` · **Instagram:** `[usuario/ID]` · **WhatsApp:** `[número]`
 
 ## Tono de marca
