@@ -20,13 +20,15 @@
   - ✅ No se deshilacha
 - **Precio al público:** `[por presentación]` · **Precio revendedor:** `[precio]` · **Precio mayorista:** `[precio y mínimo de compra]`
 
-## Usos principales (contexto de venta)
-- **Pesca artesanal:** armado y refuerzo de redes y aparejos, amarre de boyas y embarcaciones.
-- **Ferretería/uso general:** amarres, carga, tendederos, construcción, agro.
+## Usos principales (confirmados por el dueño de la marca)
+1. **Amarres de mercadería:** asegurar carga, bultos y fardos (comercio, transporte, mercados).
+2. **Amarres para botes:** amarre de embarcaciones, boyas y aparejos — exposición constante a sol y salitre.
+3. **Armado de redes de pesca:** construcción y refuerzo de redes (pesca artesanal).
 - El producto se vende hoy en mostradores de ferreterías y tiendas de pesca (ver fotos de referencia).
+- Implicación publicitaria: en los tres usos la driza sostiene algo valioso (la carga, el bote, la red). El anuncio vende lo que se deja de perder, no la cuerda.
 
 ## Segmentos objetivo
-1. **Pescadores** (B2C): artesanales principalmente. La driza es herramienta de trabajo: si falla, se pierde la faena.
+1. **Pescadores** (B2C): artesanales principalmente. La driza es herramienta de trabajo: si falla, se pierde la faena. Este segmento incluye también a quien amarra mercadería o embarcaciones (comerciantes, transportistas, gente de puerto): mismo dolor, misma driza.
 2. **Revendedores** (B2B): ferreterías, tiendas de pesca, bazares. Compran por margen y por evitar reclamos.
 3. **Mayoristas** (B2B): distribuidores regionales. Compran por rotación, margen por volumen y respaldo de marca.
 
