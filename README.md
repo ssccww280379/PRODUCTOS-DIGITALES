@@ -1,6 +1,6 @@
-# 🎣 Sistema de agentes de marketing — Línea trenzada de marca propia
+# 🪢 Sistema de agentes de marketing — Driza SHANG INVERSIONES
 
-Equipo de 6 agentes de IA (Claude Code) que producen y gestionan la publicidad en Meta Ads para una línea de pesca trenzada, dirigida a **pescadores, revendedores y mayoristas**, vendiendo siempre **el dolor y la emoción detrás del beneficio**.
+Equipo de 6 agentes de IA (Claude Code) que producen y gestionan la publicidad en Meta Ads para la **driza SHANG INVERSIONES** (cuerda 100% P.P., rollos de 1, 5 y 10 kg), dirigida a **pescadores, revendedores (ferreterías) y mayoristas**, vendiendo siempre **el dolor y la emoción detrás del beneficio**.
 
 ## Los agentes (`.claude/agents/`)
 | # | Agente | Qué hace |
@@ -23,7 +23,7 @@ Desde Claude Code, en este repositorio, pide por ejemplo:
 O simplemente: «Corre el pipeline completo para el ángulo 1» — Claude orquesta los agentes en orden (ver `CLAUDE.md`).
 
 ## Material incluido (`marketing/`)
-- `brief-de-marca.md` — **⚠️ complétalo primero** (nombre de marca, logo, precios, WhatsApp…)
+- `brief-de-marca.md` — datos de SHANG INVERSIONES y la driza; **⚠️ completa precios y WhatsApp**
 - `angulos-de-dolor.md` — los 5 ángulos de dolor con su emoción y beneficio
 - `copys/copys-meta-ads.md` — 10 copys listos (2 por ángulo + titulares extra)
 - `creativos/guiones-video.md` — 5 guiones de Reels (15–30 s) con shot list

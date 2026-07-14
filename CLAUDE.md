@@ -1,6 +1,6 @@
-# Equipo de agentes de marketing — Línea trenzada [MARCA]
+# Equipo de agentes de marketing — Driza SHANG INVERSIONES
 
-Este repositorio contiene un equipo de 6 agentes de marketing (en `.claude/agents/`) y el material estratégico (en `marketing/`) para vender línea de pesca trenzada de marca propia a pescadores, revendedores y mayoristas mediante Meta Ads.
+Este repositorio contiene un equipo de 6 agentes de marketing (en `.claude/agents/`) y el material estratégico (en `marketing/`) para vender la driza SHANG INVERSIONES (cuerda 100% P.P. en rollos de 1, 5 y 10 kg) a pescadores, revendedores (ferreterías) y mayoristas mediante Meta Ads.
 
 ## Pipeline de trabajo (orden obligatorio)
 1. **copywriter-marketing** → escribe copys basados en `marketing/angulos-de-dolor.md` → `marketing/copys/`

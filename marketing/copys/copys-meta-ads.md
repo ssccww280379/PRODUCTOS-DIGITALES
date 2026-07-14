@@ -1,104 +1,104 @@
-# Copys para Meta Ads — Línea trenzada [MARCA]
+# Copys para Meta Ads — Driza SHANG INVERSIONES
 
 > Escritos por el agente `copywriter-marketing` sobre los 5 ángulos de `marketing/angulos-de-dolor.md`.
-> Reemplaza `[MARCA]` por el nombre real. Los claims de resistencia deben ajustarse a las especificaciones reales del brief antes de publicar.
+> Todos los claims (triple capa, protección UV, alta resistencia, no se deshilacha, 100% P.P.) están impresos en la etiqueta del producto = comprobables.
 
 ---
 
-## Ángulo 1 — "El pez de tu vida no da segundas oportunidades" · Pescador
+## Ángulo 1 — "Una driza que falla te cuesta la faena completa" · Pescador
 
 ### Copy 1A
-- **Texto principal:** Ese pez lo esperaste meses. Y la línea te falló en 3 segundos. 🎣 Con [MARCA] trenzada, la pelea la terminas tú, no tu equipo. Aguanta el nudo, aguanta la corrida, aguanta la historia que vas a contar.
-- **Titular:** La línea que no te deja a medias
-- **Descripción:** Trenzada [MARCA]. Confía.
-- **CTA sugerido:** SHOP_NOW (o WHATSAPP_MESSAGE si la venta es por WhatsApp)
-- **Emoción que activa:** Frustración/pérdida → redención.
+- **Texto principal:** La driza barata no se revienta en la tienda: se revienta en plena faena, con la red cargada. 🌊 Y ese día no pierdes una cuerda, pierdes el jornal. Driza SHANG: triple capa de seguridad y alta resistencia para que la faena la termines tú.
+- **Titular:** La faena no se pierde por la cuerda
+- **Descripción:** Driza SHANG. Máxima resistencia.
+- **CTA sugerido:** WHATSAPP_MESSAGE (o SHOP_NOW si hay tienda)
+- **Emoción que activa:** Miedo a perder el sustento → seguridad.
 
 ### Copy 1B
-- **Texto principal:** Todos tenemos "el que se escapó". Casi siempre, la culpa no fue del pez: fue de la línea. Deja de regalar capturas. [MARCA]: trenzada real para peleas reales.
-- **Titular:** ¿Cuántos peces te debe tu línea?
-- **Descripción:** Cámbiate a [MARCA]
-- **CTA sugerido:** SHOP_NOW
-- **Emoción que activa:** Dolor del recuerdo + rabia contenida.
+- **Texto principal:** ¿Cuánto vale lo que amarras con una cuerda de S/ pocos soles? La red, la carga, el día de trabajo. No lo cuelgues de lo más barato. Driza SHANG, 100% P.P., hecha para aguantar la jalada.
+- **Titular:** No amarres tu trabajo a lo barato
+- **Descripción:** Presentaciones de 1, 5 y 10 kg
+- **CTA sugerido:** WHATSAPP_MESSAGE
+- **Emoción que activa:** El costo real de la falla vs. el "ahorro".
 
-### Titulares extra (A1): "Que el grande no se escape" · "Tu línea decide la pelea" · "Reviéntala tú, no tu línea"
+### Titulares extra (A1): "Aguanta la jalada completa" · "Tu faena merece triple capa" · "La cuerda que no te deja caer"
 
 ---
 
-## Ángulo 2 — "Lo barato se paga dos veces" · Pescador
+## Ángulo 2 — "Lo barato se paga dos veces" · Pescador / mostrador
 
 ### Copy 2A
-- **Texto principal:** El trenzado barato te cobra en cuotas: se deshilacha, pierde color, y al mes estás comprando otro. 💸 [MARCA] aguanta temporadas, no salidas. Haz la cuenta.
+- **Texto principal:** La cuerda genérica se deshilacha a las semanas y terminas comprando otra… y otra. 💸 La driza SHANG no se deshilacha: un solo rollo que dura lo que promete sale más barato que dos que no. Haz la cuenta.
 - **Titular:** Lo barato se paga dos veces
-- **Descripción:** Dura temporadas, no salidas
-- **CTA sugerido:** SHOP_NOW
-- **Emoción que activa:** Rabia de desperdiciar dinero.
+- **Descripción:** No se deshilacha. 100% P.P.
+- **CTA sugerido:** WHATSAPP_MESSAGE / SHOP_NOW
+- **Emoción que activa:** Rabia de gastar doble.
 
 ### Copy 2B
-- **Texto principal:** ¿Otra vez cambiando la línea? No es mala suerte: es mala línea. Una trenzada que mantiene diámetro, color y resistencia sale más barata que tres genéricas. [MARCA].
-- **Titular:** No es mala suerte. Es mala línea.
-- **Descripción:** Calidad que sale más barata
-- **CTA sugerido:** SHOP_NOW
-- **Emoción que activa:** Desconfianza hacia lo genérico → alivio de decidir bien.
+- **Texto principal:** Punta abierta, hilos sueltos, nudos que ya no agarran: tu cuerda te está avisando que fue mala compra. La próxima vez pide la SHANG: trenzado que se mantiene firme, uso tras uso.
+- **Titular:** Tu cuerda te está avisando
+- **Descripción:** Cámbiate a SHANG
+- **CTA sugerido:** WHATSAPP_MESSAGE
+- **Emoción que activa:** Reconocimiento del problema en su propia cuerda.
 
-### Titulares extra (A2): "Deja de comprar línea cada mes" · "Tu bolsillo también pesca" · "3 genéricas = 1 [MARCA]"
+### Titulares extra (A2): "Un rollo que sí dura" · "Deja de comprar cuerda cada mes" · "2 genéricas = 1 SHANG"
 
 ---
 
-## Ángulo 3 — "Que no te vean fallar" · Pescador
+## Ángulo 3 — "El sol y el mar no perdonan" · Exteriores (pesca, agro, obra)
 
 ### Copy 3A
-- **Texto principal:** El nudo se deslizó, el señuelo se fue al fondo y tus amigos lo vieron todo. 😅 Con [MARCA] el nudo agarra, el lance vuela y las historias las cuentas tú. 
-- **Titular:** Que hablen de tu pesca, no de tu falla
-- **Descripción:** Nudos firmes. Cero sorpresas.
-- **CTA sugerido:** SHOP_NOW
-- **Emoción que activa:** Vergüenza → orgullo.
+- **Texto principal:** El sol cristaliza la cuerda común: se pone tiesa, quebradiza… y falla sin avisar, justo cargada. ☀️ La driza SHANG tiene protección UV: hecha para vivir a la intemperie — sol, salitre y lluvia.
+- **Titular:** El sol no perdona. SHANG sí aguanta.
+- **Descripción:** Protección UV real
+- **CTA sugerido:** WHATSAPP_MESSAGE / SHOP_NOW
+- **Emoción que activa:** Desconfianza del material → confianza.
 
 ### Copy 3B
-- **Texto principal:** En el bote hay dos tipos de pescador: el que revisa su línea con miedo y el que lanza tranquilo. La diferencia no es la suerte, es el equipo. [MARCA] trenzada.
-- **Titular:** Lanza tranquilo
-- **Descripción:** Confianza en cada lance
-- **CTA sugerido:** SHOP_NOW
-- **Emoción que activa:** Aspiración/estatus entre pares.
+- **Texto principal:** Si tu cuerda pasa el día al sol y la noche en el mar, no le pidas milagros a una genérica. Pídele protección UV, triple capa y trenzado que no se abre. Pídele SHANG.
+- **Titular:** Hecha para la intemperie
+- **Descripción:** Sol, salitre y carga
+- **CTA sugerido:** WHATSAPP_MESSAGE
+- **Emoción que activa:** Identificación con la rutina dura de trabajo.
 
-### Titulares extra (A3): "El equipo también da respeto" · "Cero excusas en el bote" · "Tu nudo, tu palabra"
+### Titulares extra (A3): "Cuerda que no se cristaliza" · "Vive al sol, aguanta igual" · "La intemperie es su oficina"
 
 ---
 
-## Ángulo 4 — "Un cliente que reclama es un cliente que no vuelve" · Revendedor
+## Ángulo 4 — "Un cliente que reclama es un cliente que no vuelve" · Revendedor (ferreterías, tiendas de pesca)
 
 ### Copy 4A
-- **Texto principal:** Cada carrete genérico que falla no te devuelve un producto: te quita un cliente. 🏪 Vende [MARCA]: trenzada de calidad consistente, margen protegido y clientes que vuelven por más. Pide tu lista de precios de revendedor.
-- **Titular:** Vende línea que no vuelve reclamada
-- **Descripción:** Precios para revendedores
+- **Texto principal:** Cada rollo genérico que se deshilacha no te devuelve un producto: te quita un cliente del mostrador. 🏪 Vende driza SHANG: calidad consistente, etiqueta que da confianza en el estante y margen protegido. Pide la lista de precios de revendedor.
+- **Titular:** Vende cuerda que no vuelve reclamada
+- **Descripción:** Precios para ferreterías
 - **CTA sugerido:** WHATSAPP_MESSAGE / GET_QUOTE
-- **Emoción que activa:** Miedo a perder la reputación de la tienda.
+- **Emoción que activa:** Miedo a perder la reputación del negocio.
 
 ### Copy 4B
-- **Texto principal:** Tu tienda vale lo que vale lo que vendes. Con [MARCA] ganas dos veces: margen de marca propia y un cliente que regresa a comprar la que "sí aguanta". Escríbenos por el catálogo de revendedor.
-- **Titular:** Sé la tienda de la línea buena
-- **Descripción:** Margen + clientes fieles
+- **Texto principal:** Cuando el cliente pide "la buena", ¿tienes qué ofrecerle? Driza SHANG en 1, 5 y 10 kg: presentación profesional, no se deshilacha, y un margen que sí vale el espacio en tu estante. Escríbenos por el catálogo.
+- **Titular:** Sé la tienda de "la buena"
+- **Descripción:** Margen + recompra
 - **CTA sugerido:** WHATSAPP_MESSAGE
-- **Emoción que activa:** Orgullo del comerciante / deseo de diferenciarse.
+- **Emoción que activa:** Orgullo del comerciante / diferenciación.
 
-### Titulares extra (A4): "Menos reclamos, más recompra" · "Margen que no da dolores" · "Tus clientes preguntarán por ella"
+### Titulares extra (A4): "Menos reclamos, más recompra" · "El estante que sí rota" · "Tus clientes la pedirán por nombre"
 
 ---
 
 ## Ángulo 5 — "El capital congelado no paga facturas" · Mayorista
 
 ### Copy 5A
-- **Texto principal:** Cada caja que no rota es plata dormida en tu bodega. 📦 [MARCA] llega con demanda: nosotros invertimos en publicidad para que el pescador la pida y tú solo la repongas. Volumen, margen y rotación. Hablemos.
+- **Texto principal:** Cada fardo que no rota es plata dormida en tu bodega. 📦 La driza SHANG es consumible de trabajo: se gasta, se repone, rota todos los días. 3 presentaciones (1/5/10 kg), marca con publicidad activa y reposición confiable. Hablemos de tu zona.
 - **Titular:** Stock que rota, no que estorba
 - **Descripción:** Condiciones mayoristas
 - **CTA sugerido:** WHATSAPP_MESSAGE / GET_QUOTE
-- **Emoción que activa:** Ansiedad por flujo de caja → alivio de comprar seguro.
+- **Emoción que activa:** Ansiedad por flujo de caja → compra segura.
 
 ### Copy 5B
-- **Texto principal:** Distribuir marcas sin respaldo es apostar tu capital. [MARCA] es marca propia con publicidad activa, calidad consistente y reposición confiable. Pide condiciones por volumen y zona.
-- **Titular:** Distribuye una marca con respaldo
+- **Texto principal:** Distribuir cuerda sin marca es competir solo por precio. SHANG INVERSIONES te da marca, etiqueta profesional, calidad consistente y publicidad que empuja la demanda hacia tus clientes. Pide condiciones por volumen y zona.
+- **Titular:** Distribuye una marca, no un commodity
 - **Descripción:** Pide tu zona y precios
 - **CTA sugerido:** GET_QUOTE
-- **Emoción que activa:** Seguridad/confianza en la decisión de compra grande.
+- **Emoción que activa:** Seguridad en la decisión de compra grande.
 
 ### Titulares extra (A5): "Capital que gira, negocio que crece" · "Nosotros empujamos la demanda" · "Tu bodega no es un museo"

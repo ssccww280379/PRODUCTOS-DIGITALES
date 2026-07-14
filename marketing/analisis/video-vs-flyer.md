@@ -1,10 +1,10 @@
 # ¿Video o flyer? — Recomendación estratégica
 
 ## Respuesta corta
-**El video gana para vender el dolor; el flyer gana para cerrar al comprador B2B.** No es "uno u otro": es cada formato en su etapa del embudo. Si solo puedes producir UNO, produce el **Video 1 ("El que se escapó")**: la demostración de resistencia es la prueba visual que ningún flyer puede dar.
+**El video gana para vender el dolor; el flyer gana para cerrar al comprador B2B.** No es "uno u otro": es cada formato en su etapa del embudo. Si solo puedes producir UNO, produce el **Video 1 ("La faena")**: la demostración de resistencia con carga real es la prueba visual que ningún flyer puede dar.
 
 ## Por qué el video vende mejor el dolor y la emoción
-1. El dolor de este producto es un MOMENTO (la línea que se revienta, el cliente que devuelve). Los momentos se sienten en video; en imagen solo se describen.
+1. El dolor de este producto es un MOMENTO (la driza que se revienta con la carga, el cliente que devuelve el rollo). Los momentos se sienten en video; en imagen solo se describen.
 2. La objeción n.º 1 del comprador ("¿de verdad aguanta?") se destruye con una prueba de tensión EN CÁMARA. Esa escena es tu mejor activo publicitario.
 3. Reels es la ubicación con mayor alcance orgánico y pagado hoy en Meta, y es 100 % video.
 4. El video permite el arco emocional completo: dolor (0–3 s) → agitación → solución → prueba → CTA.
@@ -22,9 +22,9 @@
 | Cierre | 🖼️ Testimonio/oferta directa | 🖼️ Flyer de condiciones + conversación por WhatsApp |
 
 ## Vender el dolor/emoción, no el beneficio "plano" — regla de todos los anuncios
-- ❌ "Trenzada de 8 hebras, alta resistencia" (característica: nadie la siente)
-- ⚠️ "Línea más duradera" (beneficio plano: se olvida)
-- ✅ "Ese pez lo esperaste meses y la línea te lo robó en 3 segundos" (dolor + emoción: se siente y se comparte)
+- ❌ "Driza 100% polipropileno, triple capa" (característica: nadie la siente)
+- ⚠️ "Cuerda más duradera" (beneficio plano: se olvida)
+- ✅ "La cuerda barata no se revienta en la tienda: se revienta con la red cargada" (dolor + emoción: se siente y se comparte)
 El beneficio se menciona SIEMPRE como resolución del dolor, nunca como protagonista.
 
 ## Plan de testeo recomendado (primeras 2–3 semanas)

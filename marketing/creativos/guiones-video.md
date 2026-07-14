@@ -1,64 +1,65 @@
-# Guiones de video — Reels 9:16 (15–30 s)
+# Guiones de video — Reels 9:16 (15–30 s) · Driza SHANG INVERSIONES
 
-> Producidos por el agente `director-creativo`. Un video por ángulo de dolor. Todos deben entenderse SIN sonido (texto en pantalla siempre). Colocar `[LOGO]` al cierre de cada video.
+> Producidos por el agente `director-creativo`. Un video por ángulo de dolor. Todos deben entenderse SIN sonido (texto en pantalla siempre). Cerrar cada video con el logo SHANG (etiqueta) + CTA.
 
 ---
 
-## Video 1 — "El que se escapó" (Ángulo 1 · Pescador · 20 s)
-**Emoción:** frustración → redención.
+## Video 1 — "La faena" (Ángulo 1 · Pescador · 20 s)
+**Emoción:** miedo a perder el jornal → seguridad.
 | Tiempo | Toma | Texto en pantalla | Voz en off |
 |---|---|---|---|
-| 0–3 s | Primer plano: línea que se REVIENTA con chasquido, vara que rebota | "¿Te acuerdas del que se escapó?" | (silencio, solo el chasquido) |
-| 3–8 s | Cara de frustración del pescador; el agua quieta | "No fue el pez. Fue tu línea." | "Meses esperando ese momento..." |
-| 8–15 s | Cambio de carrete: se ve la etiqueta [MARCA]; nudo apretándose en cámara lenta | "Trenzada [MARCA]" | "...y se pierde en un segundo. Nunca más." |
-| 15–18 s | PRUEBA: peso colgado / tensión real sobre la línea, aguanta | "Aguanta la pelea completa" | "La pelea la terminas tú." |
-| 18–20 s | Captura levantada, sonrisa; [LOGO] + CTA | "Consíguela hoy 👇" | "[MARCA]. Confía." |
-**Música:** tensa al inicio, épica al final. **Ubicación:** Reels + Stories.
+| 0–3 s | Driza genérica que se REVIENTA al izar carga/red; todo cae | "¿Cuánto te costó esta cuerda?" | (solo el chasquido y el golpe) |
+| 3–8 s | Cara de frustración; la red/carga perdida | "Barata en la tienda. Carísima en la faena." | "No perdiste una cuerda..." |
+| 8–15 s | Rollo SHANG en mano: primer plano etiqueta (triple capa, alta resistencia) | "Driza SHANG · Triple capa de seguridad" | "...perdiste el día de trabajo." |
+| 15–18 s | PRUEBA: SHANG tensada con carga real, aguanta; nudo firme en macro | "Aguanta la jalada completa" | "La faena la terminas tú." |
+| 18–20 s | Logo SHANG + presentaciones 1/5/10 kg + CTA | "Pídela por WhatsApp 👇" | "SHANG. Calidad, confianza, progreso." |
+**Música:** tensa → resolutiva. **Ubicación:** Reels + Stories.
 
-## Video 2 — "La cuenta" (Ángulo 2 · Pescador · 20 s)
-**Emoción:** rabia de gastar mal → decisión inteligente.
+## Video 2 — "La cuenta" (Ángulo 2 · Pescador/mostrador · 20 s)
+**Emoción:** rabia de gastar doble → decisión inteligente.
 | Tiempo | Toma | Texto en pantalla |
 |---|---|---|
-| 0–3 s | Mano tirando a la basura un trenzado deshilachado y descolorido | "¿Otra vez comprando línea?" |
-| 3–10 s | Split screen: genérico deshilachado vs. [MARCA] intacto "después de 3 meses de uso" | "Lo barato se paga dos veces" |
-| 10–16 s | Carretes genéricos apilándose (1+1+1) vs. UN carrete [MARCA] | "3 genéricas = 1 [MARCA]" |
-| 16–20 s | Producto + [LOGO] + CTA | "Haz la cuenta 👇" |
+| 0–3 s | Mano mostrando punta deshilachada, hilos abiertos | "¿Tu cuerda ya está así?" |
+| 3–10 s | Split screen: genérica deshilachada vs. SHANG intacta "tras el mismo uso" | "Lo barato se paga dos veces" |
+| 10–16 s | Rollos genéricos apilándose (1+1) vs. UN rollo SHANG | "2 genéricas = 1 SHANG" |
+| 16–20 s | Etiqueta en primer plano: "No se deshilacha · 100% P.P." + CTA | "Haz la cuenta 👇" |
 **Música:** ritmo de "dato/consejo". **Ubicación:** Reels + Feed.
 
-## Video 3 — "El bote" (Ángulo 3 · Pescador · 15 s)
-**Emoción:** vergüenza → orgullo.
+## Video 3 — "El sol" (Ángulo 3 · Exteriores · 15 s)
+**Emoción:** desconfianza del material → confianza.
 | Tiempo | Toma | Texto en pantalla |
 |---|---|---|
-| 0–3 s | Nudo que se desliza, señuelo cae al agua; amigos riéndose de fondo | "Todos lo vieron. 😬" |
-| 3–9 s | El protagonista re-arma con [MARCA]; nudo firme en macro | "Que hablen de tu pesca, no de tu falla" |
-| 9–13 s | Lance largo en cámara lenta, línea volando | "Lanza tranquilo" |
-| 13–15 s | Pez en mano, choque de manos; [LOGO] + CTA | "[MARCA] 👇" |
-**Música:** humor al inicio, seguridad al final. **Ubicación:** Reels.
+| 0–3 s | Cuerda vieja cristalizada que se QUIEBRA con las manos | "El sol mata a las cuerdas comunes" |
+| 3–9 s | SHANG flexible, doblándose sin abrirse; etiqueta "Protección UV" | "SHANG tiene protección UV" |
+| 9–13 s | Driza trabajando al sol: bote, obra o campo | "Sol, salitre y carga. Todos los días." |
+| 13–15 s | Logo + CTA | "Hecha para la intemperie 👇" |
+**Música:** seca, percusiva. **Ubicación:** Reels.
 
 ## Video 4 — "El mostrador" (Ángulo 4 · Revendedor · 25 s)
 **Emoción:** miedo a reclamos → tienda respetada.
 | Tiempo | Toma | Texto en pantalla |
 |---|---|---|
-| 0–3 s | Cliente molesto devolviendo un carrete en el mostrador | "El reclamo no te cuesta un carrete..." |
+| 0–3 s | Cliente molesto devolviendo un rollo deshilachado en el mostrador | "El reclamo no te cuesta un rollo..." |
 | 3–8 s | El cliente se va; la puerta se cierra | "...te cuesta el cliente." |
-| 8–16 s | Mostrador con exhibidor [MARCA]; cliente vuelve y se lleva DOS | "Vende la línea que sí aguanta" |
-| 16–21 s | Mano contando billetes / ticket de venta | "Margen de revendedor + recompra" |
-| 21–25 s | [LOGO] + CTA | "Pide la lista de precios 📲" |
-**Ubicación:** Reels + Feed (targeting B2B). **CTA:** WhatsApp.
+| 8–16 s | Estante con exhibición SHANG (etiquetas alineadas); cliente vuelve y se lleva DOS | "Vende la que no vuelve reclamada" |
+| 16–21 s | Mano con ticket de venta; presentaciones 1/5/10 kg | "Margen de revendedor + recompra" |
+| 21–25 s | Logo + CTA | "Pide la lista de precios 📲" |
+**Ubicación:** Feed + Reels (targeting B2B). **CTA:** WhatsApp.
 
 ## Video 5 — "La bodega" (Ángulo 5 · Mayorista · 25 s)
 **Emoción:** ansiedad por capital congelado → compra segura.
 | Tiempo | Toma | Texto en pantalla |
 |---|---|---|
-| 0–3 s | Estiba de cajas con polvo; mano pasa el dedo y lo muestra | "Cada caja parada es plata dormida" |
-| 3–10 s | Time-lapse: la estiba [MARCA] baja rápido, se repone | "Stock que rota, no que estorba" |
-| 10–18 s | Pantalla de celular: anuncios de [MARCA] corriendo; pescador pidiéndola en tienda | "Nosotros empujamos la demanda" |
-| 18–25 s | Apretón de manos + [LOGO] + CTA | "Condiciones por volumen 📲" |
+| 0–3 s | Fardo de cuerda sin marca con polvo; mano lo muestra | "Cada fardo parado es plata dormida" |
+| 3–10 s | Time-lapse: estiba SHANG baja rápido, se repone | "La driza se gasta y se repone: rota SIEMPRE" |
+| 10–18 s | Celular: anuncios SHANG corriendo; ferretero pidiéndola | "Nosotros empujamos la demanda" |
+| 18–25 s | Apretón de manos + logo + CTA | "Condiciones por volumen y zona 📲" |
 **Ubicación:** Feed + Reels (targeting B2B). **CTA:** WhatsApp / cotización.
 
 ---
 
 ### Notas de producción
-- Grabar con celular está bien: autenticidad > producción. Los anuncios "caseros" suelen rendir mejor en Reels.
-- La toma de PRUEBA (tensión/peso real) del Video 1 puede reutilizarse en todos los videos B2C.
+- Grabar con celular está bien: autenticidad > producción. Locaciones reales: muelle, ferretería, bodega.
+- La toma de PRUEBA (carga real / tensión) del Video 1 es el activo más valioso: reutilizarla en todos los formatos.
+- La ETIQUETA es tu prueba de marca: primer plano en todos los videos (triple capa, UV, no se deshilacha = claims impresos).
 - Exportar 1080×1920, subtítulos incrustados, primeros 3 segundos SIEMPRE con el momento de dolor.
